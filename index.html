@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>A Game of Simon</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	
+  <h1>Savings Calculator</h1>
+  
+<div>
+  <form>
+    <p>Initial deposit:</p>
+    <span>$ </span><input id="init" type="text" value="500" maxlength="5"/>
+    <p>Annual additional deposits:</p>
+    <span>$ </span><input id="annual" type="text" value="100" maxlength="5"/>
+    <p>Interest rate:</p>
+    <input id="rate" type="text" value="5" maxlength="3"/><span> %</span>
+    <p>Years of savings (1-50):</p>
+  <input type="range" id="slider" min="1" max="60" value="1" oninput="evalSlider()"/>
+    <output id="sliderVal"></output>
+    <button onclick="savings();return false;" id="jsbutton"/>Calculate</button>
+  </form>
+  <br/>
+</div>
+
+  <div id="amnt"></div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
